@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diksha_Patidar</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone+Bounce&family=Carattere&family=Dancing+Script&family=Italianno&family=Lobster&family=Patrick+Hand&family=Rubik:wght@500&family=Slabo+27px&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,45 +22,40 @@
         <div class="spinner middle"></div>
         <div class="spinner bottom"></div>
     </label>
- 
-        <div id="sidebarMenu">
-            <ul class="menu">
-                <li class="data_text" data-text="Home"><a href="#">Home</a></li>
-                <li class="data_text" data-text="About"><a href="#">About</a></li>
-                <li class="data_text" data-text="Projects"><a href="#">Projects</a></li>
-                <li class="data_text" data-text="Achievements"><a href="#">Achievements</a></li>
-                <li class="data_text" data-text="Contact Us"><a href="#">Contact Us</a></li>
-                <li class="data_text" data-text="Home"><a href="#">Home</a></li>
-                <li class="data_text" data-text="About"><a href="#">About</a></li>
-                <li class="data_text" data-text="Projects"><a href="#">Projects</a></li>
-                <li class="data_text" data-text="Achievements"><a href="#">Achievements</a></li>
-                <li class="data_text" data-text="Contact Us"><a href="#">Contact Us</a></li>
-                
 
-            </ul>
-        </div>
-   
-    <div class="hhome">
-        <div class="home_body ">
+    <div id="sidebarMenu">
+        <ul class="menu">
+            <li class="data_text" data-text="Home"><a href="#">Home</a></li>
+            <li class="data_text" data-text="About"><a href="#">About</a></li>
+            <li class="data_text" data-text="Projects"><a href="#">Projects</a></li>
+            <li class="data_text" data-text="Achievements"><a href="#">Achievements</a></li>
+            <li class="data_text" data-text="Contact Us"><a href="#">Contact Us</a></li>
+
+
+        </ul>
+    </div>
+
+    <div class="hhome active">
+        <div class="home_body">
             <div class="imgdiv">
                 <img src="portdiksha.png" width="500px" height="500px">
             </div>
             <div class="name">
                 <p>Hello I'm</p>
-                <p>Diksha Patidar</p>
+                <h2 class="diksha">Diksha Patidar</h2>
                 <p>Web Developer</p>
             </div>
         </div>
     </div>
-    <div class="hhome about_us hidden">
+    <div class="hhome about_us ">
         <div class="aboutus">
             <div class="image">
                 <img src="portdiksha.png" width="350px" height="350px">
-              </div>
+            </div>
             <div class="about">
                 <heading>About Me</heading>
                 <p class="info">Hello World! I am Diksha patidar currenetly pursuing my btech from IET-DAVV</p>
-                <div class="skills">
+                <div class="skills colo">
                     <p>Skills</p>
                     <div class="skills-items">C</div>
                     <div class="skills-items">C++</div>
@@ -86,7 +86,89 @@
             </div>
         </div>
     </div>
+    <div class="hhome contact_us ">
+        
+        <div class="contact">
+            <form method="POST" action="#" class="form">
+                <div class="input1">
+                    <span>Full Name</span>
+                    <input type="text" name="name" required class="nname">
+                    
+                </div>
+                <div class="input1">
+                    <span>Email</span>
+                    <input type="text" name="email" required>
+                    
+                </div>
+                <div class="input1 mssg">
+                    <span>Message</span>
+                    <textarea rows="3" cols="50" name="message" required placeholder="Type your Message"></textarea>
+                    
+                </div>
+                <div class="input1">
+                    <input type="submit" class="button">
+                </div>
+            </form>
+        </div>
+        <div class="left">
+            <h2>Contact Info</h2>
+            <div class="info">
+                <div class="icons">
+                    <div class="r1">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="r add">
+                        <div class="head">Address</div>
+                        <div class="ans">Kins Twins Tower 16 A block Indore</div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="r1">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="r">
+                        <div class="head">Email</div>
+                        <div class="ans">dikshapatidar0149@gmail.com</div>
+                    </div>
+                </div>
+                <div class="icons">
 
+                    <div class="r1">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="r">
+                        <div class="head">Phone</div>
+                        <div class="ans">977044****</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ico">
+                <a href="https://www.facebook.com/diksha.patidar.5648"><i class="fa fa-facebook-official"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/dikshapatidar0149/"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com/DikshaPatidar12"><i class="fa fa-twitter-square"
+                        aria-hidden="true"></i></a>
+                <a href="www.linkedin.com/in/dikshapatidar0149"><i class="fa fa-linkedin-square"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let toggler = document.querySelector("label.sidebaricon");
+        toggler.addEventListener("click",() =>{
+             hideSection();
+            toggleNavbar();
+
+        });
+        function hideSection(){
+            document.querySelectorAll(".hhome.active").classList.toggle("fade-out");
+
+        }
+        function toggleNavbar(){
+            document.querySelector("")
+        }
+    </script>
 </body>
 
 </html>
