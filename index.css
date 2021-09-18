@@ -8,8 +8,12 @@ body{
             height: auto;
             
             overflow-x: hidden; 
-            background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    background-repeat: no-repeat;
+            background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-repeat: no-repeat; 
+            /* background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-repeat: no-repeat; */
     /* background: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
     */
     padding: 3vh 10px 3vh 20px;
@@ -30,8 +34,11 @@ body{
     /* background-repeat: no-repeat; */
  background: rgba(124, 62, 62, 0.2);
   border-radius: 20px;
-  border: 2px solid rgba(124, 62, 62, 0.2);
+  margin-bottom: 40px;
   
+}
+.hhome.contact_us{
+    margin-bottom: 20px;
 }
 .hhome.active{
     display: block;
@@ -52,7 +59,6 @@ body{
 }
 h2{
     color: rgb(24, 0, 130);
-    font-family: 'Patrick Hand', cursive;
     font-weight: 900;
 }
  #sidebarMenu{
@@ -85,7 +91,7 @@ h2{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15%;
    width: 20%;
    height: auto;
    font-weight: 800;
@@ -276,6 +282,13 @@ button{
     border-bottom: 2px solid black;
    
 }
+input.button{
+    transition: .2s;
+}
+input.button:hover{
+    background: #330867;
+    color: white;
+}
 .edu-content{
     margin-left: 20px;
 }
@@ -313,12 +326,14 @@ button{
     display: inline-flex;
     height: auto;
     justify-content: space-evenly;
+    width: 98.5%;
+    margin: 7px;
 }
 .contact{
    margin-top: 6%;
    margin-bottom: 3%;
     width: 30%;
-    height: 70%;
+     height: 70%;
     align-items: center;
     justify-content: center;
     /* display: inline-flex; */
@@ -343,7 +358,7 @@ input{
     outline: none;
     padding: 10px;
     margin: 10px;
-    color: white;
+    color: black;
     background: rgba(255,255,255,.1);
 }
 textarea{
@@ -392,6 +407,8 @@ textarea::placeholder{
     font-size: 20px;
     color: blanchedalmond;
     padding: 0px 20px 20px 20px ;
+    letter-spacing: 2px;
+    font-weight: 900;
     font-family: 'Dancing Script', cursive;
 }
 .r.add{
@@ -486,9 +503,10 @@ textarea::placeholder{
         
     }
     .contact{
-        margin-left: 9%;
+        margin-left: 5%;
         width: 80%;
     }
+   
     .left{
         order: -1;
         margin-left: 35%;
@@ -528,6 +546,12 @@ textarea::placeholder{
         margin-left: 4%;
         margin-top: 3%;
     }
+    .name h2{
+        font-size: 50px;
+    }
+    .name p{
+        font-size: 30px;
+    }
 
 }
 @media (max-width: 575px){
@@ -557,6 +581,17 @@ textarea::placeholder{
         align-items: center;
         justify-content: center;
     }
+    .name{
+        width: 100%;
+        margin-left: 4%;
+        margin-top: -30px;
+    }
+    .name h2{
+        font-size: 40px;
+    }
+    .name p{
+        font-size: 30px;
+    }
     
 }
 @media (max-width: 376px){
@@ -574,5 +609,7 @@ textarea::placeholder{
     .menu li{
         margin-left: -100%;
     }
-   
+   .r .ans{
+       font-size: 14px;
+   }
 }

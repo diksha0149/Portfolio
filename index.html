@@ -25,18 +25,16 @@
 
     <div id="sidebarMenu">
         <ul class="menu">
-            <li class="data_text" data-text="Home"><a href="#">Home</a></li>
-            <li class="data_text" data-text="About"><a href="#">About</a></li>
-            <li class="data_text" data-text="Projects"><a href="#">Projects</a></li>
-            <li class="data_text" data-text="Achievements"><a href="#">Achievements</a></li>
-            <li class="data_text" data-text="Contact Us"><a href="#">Contact Us</a></li>
+            <li class="data_text" ><a href="#home">Home</a></li>
+            <li class="data_text" ><a href="#about">About</a></li>
+            <li class="data_text" ><a href="#contact">Contact Us</a></li>
 
 
         </ul>
     </div>
 
-    <div class="hhome active">
-        <div class="home_body">
+    <div class="hhome active" id="home">
+        <div class="home_body" >
             <div class="imgdiv">
                 <img src="portdiksha.png" width="500px" height="500px">
             </div>
@@ -47,7 +45,7 @@
             </div>
         </div>
     </div>
-    <div class="hhome about_us ">
+    <div class="hhome about_us " id="about">
         <div class="aboutus">
             <div class="image">
                 <img src="portdiksha.png" width="350px" height="350px">
@@ -86,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div class="hhome contact_us ">
+    <div class="hhome contact_us " id="contact">
         
         <div class="contact">
             <form method="POST" action="#" class="form">
@@ -155,19 +153,22 @@
         </div>
     </div>
     <script>
-        let toggler = document.querySelector("label.sidebaricon");
-        toggler.addEventListener("click",() =>{
-             hideSection();
-            toggleNavbar();
-
+        $('.sidebaricon').click(function(){
+             $('#sidebarMenu.menu').toggle("")
         });
-        function hideSection(){
-            document.querySelectorAll(".hhome.active").classList.toggle("fade-out");
+        // let toggler = document.querySelector("label.sidebaricon");
+        // toggler.addEventListener("click",() =>{
+        //      hideSection();
+        //     toggleNavbar();
 
-        }
-        function toggleNavbar(){
-            document.querySelector("")
-        }
+        // });
+        // function hideSection(){
+        //     document.querySelectorAll(".hhome.active").classList.toggle("fade-out");
+
+        // }
+        // function toggleNavbar(){
+        //     document.querySelector("")
+        // }
     </script>
 </body>
 
