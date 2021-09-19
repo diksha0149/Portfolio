@@ -5,8 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <style>
+        .boxes{
+         background: red;
+           width: 100%;
+           height: 100vh;
+           display: inline-flex;
+
+        }
+        .box1,.box2,.box3{
+            border: 2px solid black;
+            height: calc(600px-1em);
+            width: calc(100%/3);
+            margin: 1em;
+            position: relative;
+        }
+       
+       .box1{
+          position: relative;
+          display: grid;
+
+       }
+       .box1 .bbox,.box1 .bbox1{
+           background: lightcoral;
+           width: calc(100%-1em);
+           height: 210px;
+           margin: 1em;
+           position: relative;
+           display: flex;
+       }
+       .box1 .bbox .box1a, .box1 .bbox .box1b{
+       background: lime;
+       width: 140px;
+       height: 205px;
+       margin: 1px;
+       position: relative;
+       
+       }
+
+       .box3{
+          position: relative;
+          display: grid;
+
+       }
+       .box3 .box3a,.box3 .box3b{
+           background: lightcoral;
+           width: calc(100%-1em);
+           height: 210px;
+           margin: 1em;
+           position: relative;
+       }
+       .box2{
+          position: relative;
+          display: grid;
+
+       }
+       .box2 .box2a,.box2 .box2b{
+           background: rgb(55, 16, 161);
+           width: calc(100%-1em);
+           height: 210px;
+           margin: 1em;
+           position: relative;
+       }
+        /* @media(max-width:768px){
+            .boxes{
+               display: grid;
+               height: 600px;
+               width: 100%;
+               margin: 1em;
+              position: absolute;
+            }
+            .box1,.box2,.box3{
+            border: 2px solid black;
+            height:600px;
+            width: 96%;
+            margin: 1em;
+            position: relative;
+        } */
+
+        
+    </style>
 </head>
 <body>
-    
+   <div class="boxes">
+       <div class="box1">
+           <div class="bbox">
+           <div class="box1a"></div>
+           <div class="box1b"></div>
+           </div>
+           <div class="bbox1">
+            <div class="bbox1a"></div>
+            <div class="bbox1b"></div>
+            </div>
+
+       </div>
+       <div class="box2">
+           <div class="box2a"></div>
+           <div class="box2b"></div>
+       </div>
+       <div class="box3">
+           <div class="box3a"></div>
+           <div class="box3b"></div>
+       </div>
+   </div> 
 </body>
 </html>
