@@ -9,32 +9,26 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone+Bounce&family=Carattere&family=Dancing+Script&family=Italianno&family=Lobster&family=Patrick+Hand&family=Rubik:wght@500&family=Slabo+27px&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone+Bounce&family=Carattere&family=Dancing+Script&family=Italianno&family=Lobster&family=Patrick+Hand&family=Rubik:wght@500&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+       </head>
 
 <body>
-    <div class="header"></div>
-    <input type="checkbox" id="openSidebarmenu">
-    <label for="openSidebarmenu" class="sidebaricon flex-end">
-        <div class="spinner top"></div>
-        <div class="spinner middle"></div>
-        <div class="spinner bottom"></div>
-    </label>
+    <header>
+        <div id="menu-icon" class="fas fa-bars"></div>
 
-    <div id="sidebarMenu">
-        <ul class="menu">
-            <li class="data_text" ><a href="#home">Home</a></li>
-            <li class="data_text" ><a href="#about">About</a></li>
-            <li class="data_text" ><a href="#contact">Contact Us</a></li>
-
-
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+    </header>
 
     <div class="hhome active" id="home">
-        <div class="home_body" >
+        <div class="home_body">
             <div class="imgdiv">
                 <img src="portdiksha.png" width="500px" height="500px">
             </div>
@@ -52,7 +46,7 @@
             </div>
             <div class="about">
                 <heading>About Me</heading>
-                <p class="info">Hello World! I am Diksha patidar currenetly pursuing my btech from IET-DAVV</p>
+                <p class="info">Hello World! I am Diksha patidar, Third year IT student pursuing my btech from IET-DAVV . Currently I am learning Web Development and have a prior Knowledge of C++.</p>
                 <div class="skills colo">
                     <p>Skills</p>
                     <div class="skills-items">C</div>
@@ -84,24 +78,26 @@
             </div>
         </div>
     </div>
+
     <div class="hhome contact_us " id="contact">
-        
+
         <div class="contact">
+            <h1>Contact Us</h1>
             <form method="POST" action="#" class="form">
                 <div class="input1">
                     <span>Full Name</span>
                     <input type="text" name="name" required class="nname">
-                    
+
                 </div>
                 <div class="input1">
                     <span>Email</span>
                     <input type="text" name="email" required>
-                    
+
                 </div>
                 <div class="input1 mssg">
                     <span>Message</span>
                     <textarea rows="3" cols="50" name="message" required placeholder="Type your Message"></textarea>
-                    
+
                 </div>
                 <div class="input1">
                     <input type="submit" class="button">
@@ -149,27 +145,10 @@
                         aria-hidden="true"></i></a>
                 <a href="www.linkedin.com/in/dikshapatidar0149"><i class="fa fa-linkedin-square"
                         aria-hidden="true"></i></a>
+                        
             </div>
         </div>
     </div>
-    <script>
-        $('.sidebaricon').click(function(){
-             $('#sidebarMenu.menu').toggle("")
-        });
-        // let toggler = document.querySelector("label.sidebaricon");
-        // toggler.addEventListener("click",() =>{
-        //      hideSection();
-        //     toggleNavbar();
-
-        // });
-        // function hideSection(){
-        //     document.querySelectorAll(".hhome.active").classList.toggle("fade-out");
-
-        // }
-        // function toggleNavbar(){
-        //     document.querySelector("")
-        // }
-    </script>
 </body>
 
 </html>
