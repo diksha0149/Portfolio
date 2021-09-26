@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+   <link rel="stylesheet" href="test.css">
+</head>
+<body>
+   <div class="boxes">
+       <div class="box1">
+           <div class="bbox">
+           <div class="box1a"></div>
+           <div class="box1b"></div>
+           </div>
+           <div class="bbox1">
+            <div class="bbox1a">
+                
+            </div>
+            <div class="bbox1b"></div>
+            </div>
+
+       </div>
+       <div class="box2">
+           <div class="box2a"></div>
+           <div class="box2b"></div>
+       </div>
+       <div class="box3">
+           <div class="box3a"></div>
+           <div class="box3b"></div>
+       </div>
+   </div> 
+</body>
+</html>

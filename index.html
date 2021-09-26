@@ -11,23 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone+Bounce&family=Carattere&family=Dancing+Script&family=Italianno&family=Lobster&family=Patrick+Hand&family=Rubik:wght@500&family=Slabo+27px&display=swap"
         rel="stylesheet">
-       </head>
+</head>
 
 <body>
-    <!-- <header>
-        <div id="menu-icon" class="fas fa-bars"></div>
-
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header> -->
-
-    <div class="hhome active" id="home">
+    <div class="navbar" id="navbar">
+        <div id="toggle"></div>
+        <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+        <div class="option_list" id="optionlist">
+            <ul class="list">
+                <li class="list_item"><a href="#home">Home</a></li>
+                <li class="list_item"><a href="#about">About</a></li>
+                <li class="list_item"><a href="#projects">Projects</a></li>
+                <li class="list_item"><a href="#achievements">Achievements</a></li>
+                <li class="list_item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hhome active " id="home">
         <div class="home_body">
             <div class="imgdiv">
                 <img src="portdiksha.png" width="500px" height="500px">
@@ -41,12 +45,28 @@
     </div>
     <div class="hhome about_us " id="about">
         <div class="aboutus">
-            <div class="image">
-                <img src="portdiksha.png" width="350px" height="350px">
+            <heading>About Me</heading>
+            <div class="hoverimage">
+                <div class="image">
+                    <img src="diksha.jpg" width="350px" height="350px">
+                    <div class="tree">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/diksha.patidar.5648"><i class="fa fa-facebook-official"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/dikshapatidar0149/"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/DikshaPatidar12"><i class="fa fa-twitter-square"
+                                    aria-hidden="true"></i></a>
+                            <a href="www.linkedin.com/in/dikshapatidar0149"><i class="fa fa-linkedin-square"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="about">
-                <heading>About Me</heading>
-                <p class="info">Hello World! I am Diksha patidar, Third year IT student pursuing my btech from IET-DAVV . Currently I am learning Web Development and have a prior Knowledge of C++.</p>
+
+                <p class="info">Hello World! I am Diksha patidar, Third year IT student pursuing my btech from IET-DAVV
+                    . Currently I am learning Web Development and have a prior Knowledge of C++.</p>
                 <div class="skills colo">
                     <p>Skills</p>
                     <div class="skills-items">C</div>
@@ -80,75 +100,101 @@
     </div>
 
     <div class="hhome contact_us " id="contact">
+        <div class="sub_contact">
+            <h1 class="cont">Contact Us</h1>
+            <div class="contact">
 
-        <div class="contact">
-            <h1>Contact Us</h1>
-            <form method="POST" action="#" class="form">
-                <div class="input1">
-                    <span>Full Name</span>
-                    <input type="text" name="name" required class="nname">
+                <form method="POST" action="#" class="form">
+                    <div class="input1">
+                        <span>Full Name</span>
+                        <input type="text" name="name" required class="nname">
 
-                </div>
-                <div class="input1">
-                    <span>Email</span>
-                    <input type="text" name="email" required>
+                    </div>
+                    <div class="input1">
+                        <span>Email</span>
+                        <input type="text" name="email" required>
 
-                </div>
-                <div class="input1 mssg">
-                    <span>Message</span>
-                    <textarea rows="3" cols="50" name="message" required placeholder="Type your Message"></textarea>
+                    </div>
+                    <div class="input1 mssg">
+                        <span>Message</span>
+                        <textarea rows="3" cols="50" name="message" required placeholder="Type your Message"></textarea>
 
-                </div>
-                <div class="input1">
-                    <input type="submit" class="button">
-                </div>
-            </form>
-        </div>
-        <div class="left">
-            <h2>Contact Info</h2>
-            <div class="info">
-                <div class="icons">
-                    <div class="r1">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
-                    <div class="r add">
-                        <div class="head">Address</div>
-                        <div class="ans">Kins Twins Tower 16 A block Indore</div>
+                    <div class="input1">
+                        <input type="submit" class="button">
                     </div>
-                </div>
-                <div class="icons">
-                    <div class="r1">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <div class="r">
-                        <div class="head">Email</div>
-                        <div class="ans">dikshapatidar0149@gmail.com</div>
-                    </div>
-                </div>
-                <div class="icons">
-
-                    <div class="r1">
-                        <i class="fa fa-phone-square" aria-hidden="true"></i>
-                    </div>
-                    <div class="r">
-                        <div class="head">Phone</div>
-                        <div class="ans">977044****</div>
-                    </div>
-                </div>
+                </form>
             </div>
-            <div class="ico">
-                <a href="https://www.facebook.com/diksha.patidar.5648"><i class="fa fa-facebook-official"
-                        aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/dikshapatidar0149/"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a>
-                <a href="https://twitter.com/DikshaPatidar12"><i class="fa fa-twitter-square"
-                        aria-hidden="true"></i></a>
-                <a href="www.linkedin.com/in/dikshapatidar0149"><i class="fa fa-linkedin-square"
-                        aria-hidden="true"></i></a>
-                        
+            <div class="left">
+                <h2>Contact Info</h2>
+                <div class="info">
+                    <div class="icons">
+                        <div class="r1">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="r add">
+                            <div class="head">Address</div>
+                            <div class="ans">Kins Twins Tower 16 A block Indore</div>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <div class="r1">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="r">
+                            <div class="head">Email</div>
+                            <div class="ans">dikshapatidar0149@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="icons">
+
+                        <div class="r1">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </div>
+                        <div class="r">
+                            <div class="head">Phone</div>
+                            <div class="ans">977044****</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ico">
+                    <a href="https://www.facebook.com/diksha.patidar.5648"><i class="fa fa-facebook-official"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/dikshapatidar0149/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/DikshaPatidar12"><i class="fa fa-twitter-square"
+                            aria-hidden="true"></i></a>
+                    <a href="www.linkedin.com/in/dikshapatidar0149"><i class="fa fa-linkedin-square"
+                            aria-hidden="true"></i></a>
+
+                </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".image"), {
+            max: 25,
+            speed: 400
+        });
+        VanillaTilt.init(document.querySelectorAll(".image"));
+    </script>
+    <script type="text/javascript">
+    const navbar = document.getElementById("navbar");
+      const toggle = document.getElementById("toggle")
+      const optionlist = document.getElementById("optionlist")
+      document.onclick = function(e){
+          if(e.target.id!=='toggle' && e.target.id!=='optionlist'){
+            toggle.classList.remove('active');
+          optionlist.classList.remove('active');
+          }
+      }
+      toggle.onclick = function(){
+          toggle.classList.toggle('active');
+          optionlist.classList.toggle('active');
+      }
+
+    </script>
 </body>
 
 </html>
