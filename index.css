@@ -72,7 +72,7 @@ body{
     top: -5%;
     position: absolute;
    position: fixed;
-     height: 105vh;
+     height: 110vh;
      left: -7%;
     text-align: center;
     overflow: hidden;
@@ -92,9 +92,10 @@ body{
 
 
 .list{
-  left: 40%;
-  top: 30%;
+  left: 50%;
+  top: 50%;
     position: absolute;
+    transform: translate(-50%,-50%);
     
 }
 ul li{
@@ -640,7 +641,15 @@ textarea::placeholder{
     }
     
 }
-@media (max-width: 376px){
+@media (max-width: 430px){
+    .list{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-25%,-40%);
+    }
+}
+@media (max-width: 377px){
     .r .ans{
         font-size: 17px;
     }
@@ -682,6 +691,9 @@ textarea::placeholder{
      }
      ul li a{
          margin-left: -50%;
+     }
+     .cont{
+        padding-bottom: 90px;
      }
 }
 /* media section ends */
