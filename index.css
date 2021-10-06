@@ -569,6 +569,7 @@ textarea::placeholder{
         align-items: center;
         justify-content: center;
         text-align: center;
+        height: auto;
     }
     .imgdiv{
         width: 100%;
@@ -694,6 +695,14 @@ textarea::placeholder{
      }
      .cont{
         padding-bottom: 90px;
+        position: inherit;
+        margin-bottom: 10px;
      }
 }
+/* @media (max-height: 851px){
+    .home_body{
+        height: 50%;
+        align-items: center;
+    }
+} */
 /* media section ends */
